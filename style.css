@@ -26,6 +26,23 @@ body {
   position: fixed;
   z-index: 99;
 }
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color: #bbff00;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+#cursor-blur{
+    height: 500px;
+    width: 500px;
+    background-color: #bbff0033;
+    border-radius: 50%;
+    position: fixed;
+  filter: blur(40px);
+  z-index: 9;
+}
 #vdo {
   height: 100%;
   width: 100%;
@@ -34,11 +51,11 @@ body {
   z-index: -1;
 }
 
-#home-wrapper {
+#main {
   position: relative;
   background-color: rgba(0, 0, 0, 0.37);
 }
-.homepage {
+#page1 {
   height: 100vh;
   width: 100%;
   position: relative;
@@ -47,30 +64,36 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  z-index: 10;
 }
-.homepage h1:before{
-    content:"EAT. DRINK. PLAY.";
-    position: absolute;
-    color: #000;
-    top: -6px;
-    left: -6px;
-    z-index: -1;
-    -webkit-text-stroke: 1.5px #bbff00;
+#page1 h1:before {
+  content: "EAT. DRINK. PLAY.";
+  position: absolute;
+  color: #000;
+  top: -6px;
+  left: -6px;
+z-index: -1;
+  -webkit-text-stroke: 1.5px #bbff00;
 }
-.homepage h1 {
+#page1 h1 {
   font-size: 140px;
   font-weight: 900;
   position: relative;
-  z-index: 99;
+
 }
-.homepage h2 {
+#page1 h2 {
   font-size: 30px;
   font-weight: 800;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.homepage p {
+#page1 p {
   font-size: 22px;
   width: 40%;
   font-weight: 500;
+}
+#page2 {
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
 }
